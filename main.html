@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+<span id="1">White sugar</span><input type="number" id="x1"/><span id="q1">bag</span><br>
+<span id="2">Kara coconut cream </span><input type="number" id="x2"/><span id="q2">box</span><br>
+<span id="3">Pantai Chilli jam</span><input type="text" id="x3"/><span id="q3">tin</span><br>
+<span id="4">babycorn</span><input type="text" id="x4"/><span id="q4">tin</span><br>
+
+<button onclick="test()">Copy</button>
+<script>
+    function test() {
+        p1 = document.getElementById("1").innerHTML
+        n1= document.getElementById("x1").value
+        u1 = document.getElementById("q1").innerHTML
+
+        p2 = document.getElementById("2").innerHTML
+        n2= document.getElementById("x2").value
+        u2 = document.getElementById("q2").innerHTML
+
+        p3 = document.getElementById("3").innerHTML
+        n3= document.getElementById("x3").value
+        u3 = document.getElementById("q3").innerHTML
+
+        p4 = document.getElementById("4").innerHTML
+        n4= document.getElementById("x4").value
+        u4 = document.getElementById("q4").innerHTML
+
+        output = p1 + " " + n1  + " " + u1 + "\n" + p2 + " " + n2  + " " + u2 + "\n"
+            + p3 + " " + n3  + " " + u3 + "\n" + p4 + " " + n4  + " " + u4
+
+        navigator.clipboard.writeText(output).then(function() {
+            console.log('Async: Copying to clipboard was successful!');
+        }, function(err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+    }
+
+    function deleteRow() {
+
+    }
+
+</script>
+</body>
+</html>
