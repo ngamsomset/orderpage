@@ -6,13 +6,53 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
 
+        input {
+            margin-bottom: 5px;
+            width: 20px;
+        }
+        span {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+    </style>
 </head>
 <body>
 <span id="1">White sugar</span><input type="number" id="x1"/><span id="q1">bag</span><br>
 <span id="2">Kara coconut cream </span><input type="number" id="x2"/><span id="q2">box</span><br>
-<span id="3">Pantai Chilli jam</span><input type="text" id="x3"/><span id="q3">tin</span><br>
-<span id="4">babycorn</span><input type="text" id="x4"/><span id="q4">tin</span><br>
+<span id="3">Pantai Chilli jam</span><input type="number" id="x3"/><span id="q3">tin</span><br>
+<span id="4">babycorn</span><input type="number" id="x4"/><span id="q4">tin</span><br>
+<span id="5">bamboo strip</span><input type="number" id="x5"/><span id="q5">tin</span><br>
+<span id="6">cashew nut</span><input type="number" id="x6"/><span id="q6">kgs</span><br>
+<span id="7">cooking oil</span><input type="number" id="x7"/><span id="q7">drum</span><br>
+<span id="8">tamarin sauce</span><input type="number" id="x8"/><span id="q8">bottle</span><br>
+<span id="9">MP sweet chili sauce</span><input type="number" id="x9"/><span id="q9">bottle</span><br>
+<span id="10">plum sauce</span><input type="number" id="x10"/><span id="q10">bottle</span><br>
+<span id="11">ABC</span><input type="number" id="x11"/><span id="q11">gallon</span><br>
+<span id="12">tapoica flour</span><input type="number" id="x12"/><span id="q12">bag</span><br>
+<span id="13">panda oyster sauce</span><input type="number" id="x13"/><span id="q13">tin</span><br>
+<span id="14">MS panang paste</span><input type="number" id="x14"/><span id="q14">kg</span><br>
+<span id="15">MS massamun paste</span><input type="number" id="x15"/><span id="q15">kg</span><br>
+<span id="16">MS green paste</span><input type="number" id="x16"/><span id="q16">kg</span><br>
+<span id="17">MS red, naree, massamum(can)</span><input type="number" id="x17"/><span id="q17">each</span><br>
+<span id="18">tom yum paste</span><input type="number" id="x18"/><span id="q18">bottle</span><br>
+<span id="19">laksa paste</span><input type="number" id="x19"/><span id="q19">bottle</span><br>
+<span id="20">PK shrimp paste in oil</span><input type="number" id="x20"/><span id="q20">jar</span><br>
+<span id="21">fish cake</span><input type="number" id="x21"/><span id="q21">pack</span><br>
+<span id="22">flat noodles</span><input type="number" id="x22"/><span id="q22">kg</span><br>
+<span id="23">hokkian noodle</span><input type="number" id="x23"/><span id="q23">kg</span><br>
+<span id="24">singapore noodle</span><input type="number" id="x24"/><span id="q24">pack</span><br>
+<span id="25">palm sugar</span><input type="number" id="x25"/><span id="q25">pack</span><br>
+<span id="26">tofu</span><input type="number" id="x26"/><span id="q26">pack</span><br>
+<span id="27">fried onion</span><input type="number" id="x27"/><span id="q27">kg</span><br>
+<span id="28">salted soy bean</span><input type="number" id="x28"/><span id="q28">jar</span><br>
+<span id="29">salt</span><input type="number" id="x29"/><span id="q29">kg</span><br>
+<span id="30">Knorr</span><input type="number" id="x30"/><span id="q30">bag</span><br>
+<span id="31">Golden mountain</span><input type="number" id="x31"/><span id="q31">bottle</span><br>
+<span id="32">No1 soy sauce</span><input type="number" id="x32"/><span id="q32">bottle</span><br>
+
 
 <button onclick="test()">Copy</button>
 <script>
@@ -53,8 +93,286 @@
         }
         out4 = p4 + " " + n4  + " " + u4 + "\n"
 
+        p5 = document.getElementById("5").innerHTML
+        n5= document.getElementById("x5").value
+        u5 = document.getElementById("q5").innerHTML
+        if (n5 == "") {
+            p5 = ""
+            u5 = ""
+        }
+        out5 = p5 + " " + n5  + " " + u5 + "\n"
 
-        output = out1 + out2 + out3 + out4
+        p6 = document.getElementById("6").innerHTML
+        n6= document.getElementById("x6").value
+        u6 = document.getElementById("q6").innerHTML
+        if (n6 == "") {
+            p6 = ""
+            u6 = ""
+        }
+        out6 = p6 + " " + n6  + " " + u6 + "\n"
+
+        p7 = document.getElementById("7").innerHTML
+        n7= document.getElementById("x7").value
+        u7 = document.getElementById("q7").innerHTML
+        if (n7 == "") {
+            p7 = ""
+            u7 = ""
+        }
+        out7 = p7 + " " + n7  + " " + u7 + "\n"
+
+        p7 = document.getElementById("7").innerHTML
+        n7= document.getElementById("x7").value
+        u7 = document.getElementById("q7").innerHTML
+        if (n7 == "") {
+            p7 = ""
+            u7 = ""
+        }
+        out7 = p7 + " " + n7  + " " + u7 + "\n"
+
+        p8 = document.getElementById("8").innerHTML
+        n8= document.getElementById("x8").value
+        u8 = document.getElementById("q8").innerHTML
+        if (n8 == "") {
+            p8 = ""
+            u8 = ""
+        }
+        out8 = p8 + " " + n8  + " " + u8 + "\n"
+
+        p9 = document.getElementById("9").innerHTML
+        n9= document.getElementById("x9").value
+        u9 = document.getElementById("q9").innerHTML
+        if (n9 == "") {
+            p9 = ""
+            u9 = ""
+        }
+        out9 = p9 + " " + n9  + " " + u9 + "\n"
+
+        p10 = document.getElementById("10").innerHTML
+        n10= document.getElementById("x10").value
+        u10 = document.getElementById("q10").innerHTML
+        if (n10 == "") {
+            p10 = ""
+            u10 = ""
+        }
+        out10 = p10 + " " + n10  + " " + u10 + "\n"
+
+        p11 = document.getElementById("11").innerHTML
+        n11= document.getElementById("x11").value
+        u11 = document.getElementById("q11").innerHTML
+        if (n11 == "") {
+            p11 = ""
+            u11 = ""
+        }
+        out11 = p11 + " " + n11  + " " + u11 + "\n"
+
+
+        p12 = document.getElementById("12").innerHTML
+        n12= document.getElementById("x12").value
+        u12 = document.getElementById("q12").innerHTML
+        if (n12 == "") {
+            p12 = ""
+            u12 = ""
+        }
+        out12 = p12 + " " + n12  + " " + u12 + "\n"
+
+        p13 = document.getElementById("13").innerHTML
+        n13= document.getElementById("x13").value
+        u13 = document.getElementById("q13").innerHTML
+        if (n13 == "") {
+            p13 = ""
+            u13 = ""
+        }
+        out13 = p13 + " " + n13  + " " + u13 + "\n"
+
+        p14 = document.getElementById("14").innerHTML
+        n14= document.getElementById("x14").value
+        u14 = document.getElementById("q14").innerHTML
+        if (n14 == "") {
+            p14 = ""
+            u14 = ""
+        }
+        out14 = p14 + " " + n14  + " " + u14 + "\n"
+
+        p15 = document.getElementById("15").innerHTML
+        n15= document.getElementById("x15").value
+        u15 = document.getElementById("q15").innerHTML
+        if (n15 == "") {
+            p15 = ""
+            u15 = ""
+        }
+        out15 = p15 + " " + n15  + " " + u15 + "\n"
+
+        p16 = document.getElementById("16").innerHTML
+        n16= document.getElementById("x16").value
+        u16 = document.getElementById("q16").innerHTML
+        if (n16 == "") {
+            p16 = ""
+            u16 = ""
+        }
+        out16 = p16 + " " + n16  + " " + u16 + "\n"
+
+        p17 = document.getElementById("17").innerHTML
+        n17= document.getElementById("x17").value
+        u17 = document.getElementById("q17").innerHTML
+        if (n17 == "") {
+            p17 = ""
+            u17 = ""
+        }
+        out17 = p17 + " " + n17  + " " + u17 + "\n"
+
+        p18 = document.getElementById("18").innerHTML
+        n18= document.getElementById("x18").value
+        u18 = document.getElementById("q18").innerHTML
+        if (n18 == "") {
+            p18 = ""
+            u18 = ""
+        }
+        out18 = p18 + " " + n18  + " " + u18 + "\n"
+
+        p19 = document.getElementById("19").innerHTML
+        n19= document.getElementById("x19").value
+        u19 = document.getElementById("q19").innerHTML
+        if (n19 == "") {
+            p19 = ""
+            u19 = ""
+        }
+        out19 = p19 + " " + n19  + " " + u19 + "\n"
+
+        p20 = document.getElementById("20").innerHTML
+        n20= document.getElementById("x20").value
+        u20 = document.getElementById("q20").innerHTML
+        if (n20 == "") {
+            p20 = ""
+            u20 = ""
+        }
+        out20 = p20 + " " + n20  + " " + u20 + "\n"
+
+        p21 = document.getElementById("21").innerHTML
+        n21= document.getElementById("x21").value
+        u21 = document.getElementById("q21").innerHTML
+        if (n21 == "") {
+            p21 = ""
+            u21 = ""
+        }
+        out21 = p21 + " " + n21  + " " + u21 + "\n"
+
+        p22 = document.getElementById("22").innerHTML
+        n22= document.getElementById("x22").value
+        u22 = document.getElementById("q22").innerHTML
+        if (n22 == "") {
+            p22 = ""
+            u22 = ""
+        }
+        out22 = p22 + " " + n22  + " " + u22 + "\n"
+
+        p23 = document.getElementById("23").innerHTML
+        n23= document.getElementById("x23").value
+        u23 = document.getElementById("q23").innerHTML
+        if (n23 == "") {
+            p23 = ""
+            u23 = ""
+        }
+        out23 = p23 + " " + n23  + " " + u23 + "\n"
+
+        p24 = document.getElementById("24").innerHTML
+        n24= document.getElementById("x24").value
+        u24 = document.getElementById("q24").innerHTML
+        if (n24 == "") {
+            p24 = ""
+            u24 = ""
+        }
+        out24 = p24 + " " + n24  + " " + u24 + "\n"
+
+        p25 = document.getElementById("25").innerHTML
+        n25= document.getElementById("x25").value
+        u25 = document.getElementById("q25").innerHTML
+        if (n25 == "") {
+            p25 = ""
+            u25 = ""
+        }
+        out25 = p25 + " " + n25  + " " + u25 + "\n"
+
+        p26 = document.getElementById("26").innerHTML
+        n26= document.getElementById("x26").value
+        u26 = document.getElementById("q26").innerHTML
+        if (n26 == "") {
+            p26 = ""
+            u26 = ""
+        }
+        out26 = p26 + " " + n26  + " " + u26 + "\n"
+
+        p27 = document.getElementById("27").innerHTML
+        n27= document.getElementById("x27").value
+        u27 = document.getElementById("q27").innerHTML
+        if (n27 == "") {
+            p27 = ""
+            u27 = ""
+        }
+        out27 = p27 + " " + n27  + " " + u27 + "\n"
+
+        p27 = document.getElementById("27").innerHTML
+        n27= document.getElementById("x27").value
+        u27 = document.getElementById("q27").innerHTML
+        if (n27 == "") {
+            p27 = ""
+            u27 = ""
+        }
+        out27 = p27 + " " + n27  + " " + u27 + "\n"
+
+        p28 = document.getElementById("28").innerHTML
+        n28= document.getElementById("x28").value
+        u28 = document.getElementById("q28").innerHTML
+        if (n28 == "") {
+            p28 = ""
+            u28 = ""
+        }
+        out28 = p28 + " " + n28  + " " + u28 + "\n"
+
+        p29 = document.getElementById("29").innerHTML
+        n29= document.getElementById("x29").value
+        u29 = document.getElementById("q29").innerHTML
+        if (n29 == "") {
+            p29 = ""
+            u29 = ""
+        }
+        out29 = p29 + " " + n29  + " " + u29 + "\n"
+
+        p30 = document.getElementById("30").innerHTML
+        n30= document.getElementById("x30").value
+        u30 = document.getElementById("q30").innerHTML
+        if (n30 == "") {
+            p30 = ""
+            u30 = ""
+        }
+        out30 = p30 + " " + n30  + " " + u30 + "\n"
+
+        p31 = document.getElementById("31").innerHTML
+        n31= document.getElementById("x31").value
+        u31 = document.getElementById("q31").innerHTML
+        if (n31 == "") {
+            p31 = ""
+            u31 = ""
+        }
+        out31 = p31 + " " + n31  + " " + u31 + "\n"
+
+        p32 = document.getElementById("32").innerHTML
+        n32= document.getElementById("x32").value
+        u32 = document.getElementById("q32").innerHTML
+        if (n32 == "") {
+            p32 = ""
+            u32 = ""
+        }
+        out32 = p32 + " " + n32  + " " + u32 + "\n"
+
+
+
+        output = out1 + out2 + out3 + out4 + out5 + out6 + out7 +
+            out8 + out9 + out10 + out11 + out12 + out13 + out14 +
+            out15 + out16 + out17 + out18 + out19 + out20 + out21 +
+            out22 + out23 + out24 + out25 + out26 + out27 + out28 +
+            out29 + out30 + out31 + out32
+
+
 
         navigator.clipboard.writeText(output).then(function() {
             console.log('Async: Copying to clipboard was successful!');
