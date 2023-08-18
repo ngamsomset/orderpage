@@ -360,6 +360,9 @@
     ><input type="number" id="x57" /><span id="q57">pack</span><br />
     <span id="58">plastic bag(35micron) L</span
     ><input type="number" id="x58" /><span id="q58">pack</span><br />
+    <span id="99">wrap 33x600</span><input id="x99" type="number" /><span id="q99">ea</span><br />
+    <span id="100">machine dish washing liquid</span><input id="x100" type="number" /><span id="q100">gallon</span><br />
+    <span id="101">machine glass washing liquid</span><input id="x101" type="number" /><span id="q101">gallon</span><br />
 
     <button onclick="test()">Copy</button>
     <script>
@@ -1246,6 +1249,33 @@
         }
         out96 = p96 + " " + n96 + " " + u96 + "\n";
 
+        p99 = document.getElementById("99").innerHTML;
+        n99 = document.getElementById("x99").value;
+        u99 = document.getElementById("q99").innerHTML;
+        if (n99 == "") {
+          p99 = "";
+          u99 = "";
+        }
+        out99 = p99 + " " + n99 + " " + u99 + "\n";
+
+        p100 = document.getElementById("100").innerHTML;
+        n100 = document.getElementById("x100").value;
+        u100 = document.getElementById("q100").innerHTML;
+        if (n100 == "") {
+          p100 = "";
+          u100 = "";
+        }
+        out100 = p100 + " " + n100 + " " + u100 + "\n";
+
+        p101 = document.getElementById("101").innerHTML;
+        n101 = document.getElementById("x101").value;
+        u101 = document.getElementById("q101").innerHTML;
+        if (n101 == "") {
+          p101 = "";
+          u101 = "";
+        }
+        out101 = p101 + " " + n101 + " " + u101 + "\n";
+
         output =
           out1 +
           out2 +
@@ -1342,7 +1372,7 @@
           out96 +
           out56 +
           out57 +
-          out58;
+          out58 + out99 + out100 + out101;
 
         navigator.clipboard.writeText(output).then(
           function () {
