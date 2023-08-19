@@ -1374,7 +1374,7 @@
           out57 +
           out58 + out99 + out100 + out101;
 
-        navigator.clipboard.writeText(output).then(
+        navigator.clipboard.writeText(output.replace(/(^[ \t]*\n)/gm, "")).then(
           function () {
             console.log("Async: Copying to clipboard was successful!");
           },
